@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		8DE9D5A123C9974E00B5B3B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9D59F23C9974E00B5B3B1 /* Main.storyboard */; };
 		8DE9D5A323C9974F00B5B3B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9D5A223C9974F00B5B3B1 /* Assets.xcassets */; };
 		8DE9D5A623C9974F00B5B3B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9D5A423C9974F00B5B3B1 /* LaunchScreen.storyboard */; };
+		8DE9D5AE23C9A04C00B5B3B1 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9D5AD23C9A04C00B5B3B1 /* DataModel.swift */; };
 		8E727DDBE0AFA96C92C2635C /* Pods_AddNavi01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFF26B7CDBB2F53FD6686B6 /* Pods_AddNavi01.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		8DE9D5A223C9974F00B5B3B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DE9D5A523C9974F00B5B3B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DE9D5A723C9974F00B5B3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DE9D5AD23C9A04C00B5B3B1 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		AFFF26B7CDBB2F53FD6686B6 /* Pods_AddNavi01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AddNavi01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC172F828FA40854EFCB0AF /* Pods-AddNavi01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddNavi01.release.xcconfig"; path = "Target Support Files/Pods-AddNavi01/Pods-AddNavi01.release.xcconfig"; sourceTree = "<group>"; };
 		F6DD9065CCAC8E10CE3FDB96 /* Pods-AddNavi01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddNavi01.debug.xcconfig"; path = "Target Support Files/Pods-AddNavi01/Pods-AddNavi01.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				8DE9D59B23C9974E00B5B3B1 /* SceneDelegate.swift */,
 				8DE9D59D23C9974E00B5B3B1 /* ViewController.swift */,
 				8DE9D59F23C9974E00B5B3B1 /* Main.storyboard */,
+				8DE9D5AD23C9A04C00B5B3B1 /* DataModel.swift */,
 				8DE9D5A223C9974F00B5B3B1 /* Assets.xcassets */,
 				8DE9D5A423C9974F00B5B3B1 /* LaunchScreen.storyboard */,
 				8DE9D5A723C9974F00B5B3B1 /* Info.plist */,
@@ -88,7 +91,6 @@
 				F6DD9065CCAC8E10CE3FDB96 /* Pods-AddNavi01.debug.xcconfig */,
 				EFC172F828FA40854EFCB0AF /* Pods-AddNavi01.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DE9D59E23C9974E00B5B3B1 /* ViewController.swift in Sources */,
+				8DE9D5AE23C9A04C00B5B3B1 /* DataModel.swift in Sources */,
 				8DE9D59A23C9974E00B5B3B1 /* AppDelegate.swift in Sources */,
 				8DE9D59C23C9974E00B5B3B1 /* SceneDelegate.swift in Sources */,
 			);
