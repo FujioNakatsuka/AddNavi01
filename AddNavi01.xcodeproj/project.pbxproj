@@ -13,6 +13,7 @@
 		8DE9D5A123C9974E00B5B3B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9D59F23C9974E00B5B3B1 /* Main.storyboard */; };
 		8DE9D5A323C9974F00B5B3B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9D5A223C9974F00B5B3B1 /* Assets.xcassets */; };
 		8DE9D5A623C9974F00B5B3B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE9D5A423C9974F00B5B3B1 /* LaunchScreen.storyboard */; };
+		8E727DDBE0AFA96C92C2635C /* Pods_AddNavi01.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFF26B7CDBB2F53FD6686B6 /* Pods_AddNavi01.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		8DE9D5A223C9974F00B5B3B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DE9D5A523C9974F00B5B3B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DE9D5A723C9974F00B5B3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFFF26B7CDBB2F53FD6686B6 /* Pods_AddNavi01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AddNavi01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC172F828FA40854EFCB0AF /* Pods-AddNavi01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddNavi01.release.xcconfig"; path = "Target Support Files/Pods-AddNavi01/Pods-AddNavi01.release.xcconfig"; sourceTree = "<group>"; };
+		F6DD9065CCAC8E10CE3FDB96 /* Pods-AddNavi01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddNavi01.debug.xcconfig"; path = "Target Support Files/Pods-AddNavi01/Pods-AddNavi01.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E727DDBE0AFA96C92C2635C /* Pods_AddNavi01.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59A880C7C0E5DC02F45EE1A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFFF26B7CDBB2F53FD6686B6 /* Pods_AddNavi01.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8DE9D58D23C9974E00B5B3B1 = {
 			isa = PBXGroup;
 			children = (
 				8DE9D59823C9974E00B5B3B1 /* AddNavi01 */,
 				8DE9D59723C9974E00B5B3B1 /* Products */,
+				BE0E95FD4A2926DBF0DDCBB1 /* Pods */,
+				59A880C7C0E5DC02F45EE1A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = AddNavi01;
 			sourceTree = "<group>";
 		};
+		BE0E95FD4A2926DBF0DDCBB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6DD9065CCAC8E10CE3FDB96 /* Pods-AddNavi01.debug.xcconfig */,
+				EFC172F828FA40854EFCB0AF /* Pods-AddNavi01.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DE9D5AA23C9974F00B5B3B1 /* Build configuration list for PBXNativeTarget "AddNavi01" */;
 			buildPhases = (
+				B0B3CE3DDD9E49916ECDE83F /* [CP] Check Pods Manifest.lock */,
 				8DE9D59223C9974E00B5B3B1 /* Sources */,
 				8DE9D59323C9974E00B5B3B1 /* Frameworks */,
 				8DE9D59423C9974E00B5B3B1 /* Resources */,
+				A1986719950D4244EFA3521F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A1986719950D4244EFA3521F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AddNavi01/Pods-AddNavi01-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AddNavi01/Pods-AddNavi01-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AddNavi01/Pods-AddNavi01-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0B3CE3DDD9E49916ECDE83F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AddNavi01-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8DE9D59223C9974E00B5B3B1 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		8DE9D5AB23C9974F00B5B3B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6DD9065CCAC8E10CE3FDB96 /* Pods-AddNavi01.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		8DE9D5AC23C9974F00B5B3B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFC172F828FA40854EFCB0AF /* Pods-AddNavi01.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
