@@ -11,6 +11,10 @@ import Alamofire
 import SwiftyJSON
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+    
+//書き始めでclass ViewController　を　拒否られて、この位置でnumberOfRowsInSection、と　cellForRowAtを書くように求められましたが、cellに関する記述の後（67行目以降）でも問題はありませんでした。
+//
 //    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        return 1
 //    }
@@ -39,6 +43,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         
     }
+    
+//　　　　　　　　return 1 は、let cell ---- return cell と　競合？するので、拒否られたため、コメントアウトしています。
 //    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //              return 1
 //          }
