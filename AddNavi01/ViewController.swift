@@ -13,16 +13,12 @@ import SwiftyJSON
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     
-//書き始めでclass ViewController　を　拒否られて、この位置でnumberOfRowsInSection、と　cellForRowAtを書くように求められましたが、cellに関する記述の後（67行目以降）でも問題はありませんでした。
-//
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 1
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-//        cell.selectionStyle = .none
-//    }
+//classの宣言行で追加したプロトコル
+//    UITableViewDelegate,UITableViewDataSourcenumberOfRowsInSection
+//に対応して以下のメソッドが必要
+//①tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+//②tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+
     
 
     @IBOutlet weak var tableView: UITableView!
@@ -44,11 +40,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
     }
     
-//　　　　　　　　return 1 は、let cell ---- return cell と　競合？するので、拒否られたため、コメントアウトしています。
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//              return 1
-//          }
-//
           func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
               let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
               cell.selectionStyle = .none
@@ -88,7 +79,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             switch response.result {
                 
             case.success:
-//                let json : JSON = JSON(response.data as Any)
+//               let json : JSON = JSON(response.data as Any)
                 for i in 0...9{
                     
                      let json : JSON = JSON(response.data as Any)
